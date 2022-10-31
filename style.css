@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+}
+
+/* :root{
+    --color-contenedor: #3f7c85 ;
+    --color-sec: #ff5f5d;
+    --color-texto: #747e7e;
+    --color-fondo: #fff; 
+} */
+
+:root{
+    --color-contenedor: #053d38 ;
+    --color-sec: #c5d661;
+    --color-texto: #14140f;
+    --color-fondo: #fff; 
+}
+::selection{
+    color: var(--color-fondo);
+    background-color: var(--color-sec);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    padding: 3rem 0 2rem;
+}
+
+.contenedor{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    background-color: var(--color-contenedor);
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-fondo)
+}
+
+.shop{
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-weight: 500;
+    background-color: var(--color-sec);
+    color: var(--color-fondo);
+}
+
+.login{
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-weight: 500;
+    background-color: var(--color-sec);
+    color: var(--color-fondo);
+}
+
+.login:hover{
+    background: #112349;
+    transition: 0.3s;
+}
+
+.home {
+    width: 100%;
+    min-height: 250px;
+    background:var(--color-contenedor) ;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-home{
+    color: var(--color-sec);
+    text-align: center;
+}
+
+.titulo-home{
+    font-size: 3.5rem;
+}
+
+.menu{
+    background-color: var(--color-sec);
+    text-align: center;
+    position: relative;
+}
+
+.menu ul{
+    display: inline-flex;
+    list-style: none;
+    color: var(--color-fondo);
+}
+
+.menu ul li{
+    margin: 10px;
+    padding: 10px;
+    width: 160px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: var(--color-fondo);
+}
+
+.post{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px, auto));
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.post-box {
+    background-color: rgba(240, 237, 234, 0.808);
+    box-shadow: 0 4px 14px hsl(355deg, 25%, 15% / 10%);
+    padding: 15px;
+    border-radius: 0.5rem;
+}
+
+.post-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+}
+
+.categoria{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--color-sec);
+}
+
+.titulo-post{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-texto);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.fecha-post{
+    display: flex;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.descripcion-post{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 5px 0 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.formulario{
+    width: 100%;
+    height: 100vh;
+    background-color:#0a3121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background-color: var(--color-sec);
+    display: flex;
+    flex-direction: column;
+    padding: 18px 40px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h1{
+    color: var(--color-texto);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    background: #fff;
+    font-size: 16px;
+}
+
+form button{
+    padding: 15px;
+    font: 18px;
+    border: 0;
+    outline: none;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
